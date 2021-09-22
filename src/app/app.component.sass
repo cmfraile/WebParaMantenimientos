@@ -6,13 +6,19 @@
     background-position: center
     background-image: url("../assets/img/dragon.jpg")
     text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    .row
+        min-width: 50%
     .primera
         text-indent: 15%
         i
             margin: 0px 10px
             font-size: 1.2rem
     .buenavibra
-        margin-top: 20px
+        margin-top: 50px
         text-align: center
         i
             margin: 0px 10px
@@ -21,7 +27,7 @@
         display: flex
         align-items: center
         justify-content: center
-        margin: 40px 0px
+        margin-bottom: 80px
         i
             margin: 0px 30px
             font-size: 1.5rem
@@ -32,9 +38,14 @@
         text-align: justify
         font-weight: 700
     .enlaces
-        margin: 50px auto
-        max-width: 50%
+        margin-top: 50px
         display: flex
         justify-content: space-around
         i
             font-size: 5rem
+        a
+            &:hover
+                i
+                    color: yellow
+
+@media ( max-width:1120px )
