@@ -1,3 +1,5 @@
+$mdefault: 50px auto
+$mreduce: 25px auto
 .container
     min-width: 100vw
     min-height: 100vh
@@ -18,7 +20,7 @@
             margin: 0px 10px
             font-size: 1.2rem
     .buenavibra
-        margin-top: 50px
+        margin: $mdefault
         text-align: center
         i
             margin: 0px 10px
@@ -27,18 +29,18 @@
         display: flex
         align-items: center
         justify-content: center
-        margin-bottom: 80px
+        margin: $mdefault
         i
             margin: 0px 30px
             font-size: 1.5rem
     p
-        font-size: 1.4rem
+        font-size: 1.8rem
         margin:0px auto
         max-width: 50%
         text-align: justify
         font-weight: 700
     .enlaces
-        margin-top: 50px
+        margin: $mdefault
         display: flex
         justify-content: space-around
         i
@@ -48,4 +50,47 @@
                 i
                     color: yellow
 
-@media ( max-width:1120px )
+@media ( max-width:1366px )
+    .container
+        p
+            max-width: 80%
+            font-size: 1.5rem
+
+@media ( max-width:1024px )
+    .container
+        background-image: url("../assets/img/dragonsujeto.jpg")
+    .enlacerow
+        min-width: 100% !important
+        .enlaces
+            margin: $mreduce
+            margin: 50px 0px
+        .buenavibra
+            margin: $mreduce
+        h1
+            margin: $mreduce
+        p
+            max-width: 80%
+
+@media ( max-width:600px )
+    .container
+        p
+            font-size: 1.2rem
+        .enlaces
+            i
+                font-size: 4rem
+
+@media ( max-width:400px )
+    .container
+        .enlaces
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: row
+            flex-wrap: wrap
+            margin-top: -25px
+            a
+                min-width: 40%
+                padding: 25px
+
+
+
